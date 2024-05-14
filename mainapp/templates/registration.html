@@ -1,0 +1,10 @@
+ {% extends "index.html "%}
+
+{%block body %}
+<div class ="container">
+    {%for i in form%}
+    {{i.label_tag}} {{i}} {{i.errors}}
+    {%endfor%}
+</div>
+
+{%endblock body%}
